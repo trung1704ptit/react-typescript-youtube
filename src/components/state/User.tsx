@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AuthUser } from "../types/User.types";
+import { AuthUser } from "../../types/User.types";
 
 export const User = () => {
   const [user, setUser] = useState<AuthUser>({} as AuthUser);
