@@ -14,6 +14,8 @@ import { UserContextProvider } from './components/context/UserContext';
 import { User } from "./components/context/User";
 import { MutableRef } from './components/ref/MutableRef';
 import { List } from './components/generics/List'
+import { RandomNumber } from "./components/restriction/RandomNumber";
+import { Toast } from "./components/templateLiterals/Toast";
 
 function App() {
   const nameList = [
@@ -66,9 +68,11 @@ function App() {
       </UserContextProvider> */}
 
       {/* <MutableRef /> */}
-      <List items={["Hello", "Trung", "Nguyen"]} onClick={item => console.log(item)} />
-      <List items={[1, 2, 3, 4, 5, 5]} onClick={item => console.log(item)} />
-      <List items={[{ first: "Trung", last: 'Nguyen' }, { first: "Trung2", last: 'Nguyen2' }]} onClick={item => console.log(item)} />
+      {/* <List items={["Hello", "Trung", "Nguyen"]} onClick={item => console.log(item)} /> */}
+      {/* <List items={[1, 2, 3, 4, 5, 5]} onClick={item => console.log(item)} /> */}
+      {/* <List items={[{ first: "Trung", last: 'Nguyen' }, { first: "Trung2", last: 'Nguyen2' }]} onClick={item => console.log(item)} /> */}
+      {/* <RandomNumber value={0} isPositive /> */}
+      <Toast position="center" />
     </div>
   );
 }
