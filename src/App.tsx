@@ -13,6 +13,7 @@ import { ThemeContextProvider } from './components/context/ThemeContext';
 import { UserContextProvider } from './components/context/UserContext';
 import { User } from "./components/context/User";
 import { MutableRef } from './components/ref/MutableRef';
+import { List } from './components/generics/List'
 
 function App() {
   const nameList = [
@@ -56,15 +57,18 @@ function App() {
         styles={{ border: "1px solid #f1f1f1", padding: 20, display: "block" }}
       ></Container> */}
 
-      <ThemeContextProvider>
+      {/* <ThemeContextProvider>
         <Box />
-      </ThemeContextProvider>
+      </ThemeContextProvider> */}
 
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
 
-      <MutableRef />
+      {/* <MutableRef /> */}
+      <List items={["Hello", "Trung", "Nguyen"]} onClick={item => console.log(item)} />
+      <List items={[1, 2, 3, 4, 5, 5]} onClick={item => console.log(item)} />
+      <List items={[{ first: "Trung", last: 'Nguyen' }, { first: "Trung2", last: 'Nguyen2' }]} onClick={item => console.log(item)} />
     </div>
   );
 }
