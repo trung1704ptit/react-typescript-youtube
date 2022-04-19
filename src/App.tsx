@@ -16,6 +16,7 @@ import { MutableRef } from './components/ref/MutableRef';
 import { List } from './components/generics/List'
 import { RandomNumber } from "./components/restriction/RandomNumber";
 import { Toast } from "./components/templateLiterals/Toast";
+import { CustomButton } from "./components/html/Button";
 
 function App() {
   const nameList = [
@@ -72,7 +73,10 @@ function App() {
       {/* <List items={[1, 2, 3, 4, 5, 5]} onClick={item => console.log(item)} /> */}
       {/* <List items={[{ first: "Trung", last: 'Nguyen' }, { first: "Trung2", last: 'Nguyen2' }]} onClick={item => console.log(item)} /> */}
       {/* <RandomNumber value={0} isPositive /> */}
-      <Toast position="center" />
+      {/* <Toast position="center" /> */}
+      <CustomButton variant="primary">
+        click me
+      </CustomButton>
     </div>
   );
 }
