@@ -12,6 +12,7 @@ import { Box } from './components/context/Box'
 import { ThemeContextProvider } from './components/context/ThemeContext';
 import { UserContextProvider } from './components/context/UserContext';
 import { User } from "./components/context/User";
+import { MutableRef } from './components/ref/MutableRef';
 
 function App() {
   const nameList = [
@@ -62,6 +63,8 @@ function App() {
       <UserContextProvider>
         <User />
       </UserContextProvider>
+
+      <MutableRef />
     </div>
   );
 }
